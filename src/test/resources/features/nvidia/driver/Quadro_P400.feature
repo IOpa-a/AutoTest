@@ -1,13 +1,14 @@
-Feature: Поиск драйвера nvidia
+# language: ru
+Функция: Поиск драйвера nvidia
 
-  Scenario: Quadro P400
-
-    Then Выбераем тип продукта "Quadro"
-    Then Выбераем серию "Quadro Series"
-    Then Выбераем семейство "Quadro P400"
-    Then Выбераем OS "Windows 10 64-bit"
-    Then Выбераем тип драйвера "DCH"
-    Then Выбераем тип загрузки Quadro "Quadro New Feature Driver (QNF)"
-    Then Выбераем язык "Русский"
-    Then Кликаем на поиск драйвера
-    Then Поиск кнопки загрузка
+  Сценарий: Quadro P400
+    Дано страница поиска драйвера
+    Если Выберем тип продукта "Quadro"
+    Если Выберем серию "Quadro Series"
+    Если Выберем семейство "Quadro P400"
+    Если Выберем OS "Windows 10 64-bit"
+    Если Выберем тип драйвера "DCH"
+    Если Выберем тип загрузки Quadro "Quadro New Feature Driver (QNF)"
+    Если Выберем язык "Русский"
+    Затем Кликнем на кнопку поиск драйвера
+    То появиться кнопки загрузка драйвера

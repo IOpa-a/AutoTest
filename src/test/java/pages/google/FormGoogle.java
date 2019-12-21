@@ -54,7 +54,9 @@ public class FormGoogle {
 
     public void ticTacToeClick(int x, int pos) {
         x++;
-        $x("//div[@class='freebirdFormviewerViewItemsGridScrollingData']/div[" + x + "]/span[1]/div[" + pos + "]/div[1]/div[3]/div[1]/..").click();
+       // $x("//div[@class='freebirdFormviewerViewItemsGridScrollingData']/div[" + x + "]/span[1]/div[" + pos + "]/div[1]/div[3]/div[1]/..").click();
+        $x("//*[@id='mG61Hd']/div/div/div[2]/div[6]/div/div[2]/div/div[1]/div/div[" + x + "]/span/div[" + pos + "]/div").click();
+        //$x("//*[@id='mG61Hd']/div/div/div[2]/div[6]/div/div[2]/div/div[1]/div/div[" + x + "]/span/div[" + pos + "]/div/div/div[1]").click();
     }
 
     public void fillFormForActive(String data) {

@@ -1,12 +1,13 @@
-Feature: Поиск драйвера nvidia
+        # language: ru
+Функция: Поиск драйвера nvidia
 
-  Scenario: nvidiaDriver 1050Ti
-
-    Then Выбераем тип продукта "GeForce"
-    Then Выбераем серию "GeForce 10 Series"
-    Then Выбераем семейство "GeForce GTX 1050 Ti"
-    Then Выбераем OS "Windows 10 64-bit"
-    Then Выбераем тип загрузки GeForce "Драйвер Game Ready (GRD)"
-    Then Выбераем язык "Русский"
-    Then Кликаем на поиск драйвера
-    Then Поиск кнопки загрузка
+  Сценарий: nvidiaDriver 1050Ti
+    Дано страница поиска драйвера
+    Если Выберем тип продукта "GeForce"
+    Если Выберем серию "GeForce 10 Series"
+    Если Выберем семейство "GeForce GTX 1050 Ti"
+    Если Выберем OS "Windows 10 64-bit"
+    Если Выберем тип загрузки GeForce "Драйвер Game Ready (GRD)"
+    Если Выберем язык "Русский"
+    Затем Кликнем на кнопку поиск драйвера
+    То появиться кнопки загрузка драйвера

@@ -1,12 +1,13 @@
-Feature: Поиск драйвера nvidia
+# language: ru
+Функция: Поиск драйвера nvidia
 
-  Scenario: nvidiaDriver 710
-
-    Then Выбераем тип продукта "GeForce"
-    Then Выбераем серию "GeForce 700 Series"
-    Then Выбераем семейство "GeForce GT 710"
-    Then Выбераем OS "Windows 8 64-bit"
-    Then Выбераем тип загрузки GeForce "Драйвер Game Ready (GRD)"
-    Then Выбераем язык "Русский"
-    Then Кликаем на поиск драйвера
-    Then Поиск кнопки загрузка
+  Сценарий: nvidiaDriver 710
+    Дано страница поиска драйвера
+    Если Выберем тип продукта "GeForce"
+    Если Выберем серию "GeForce 700 Series"
+    Если Выберем семейство "GeForce GT 710"
+    Если Выберем OS "Windows 8 64-bit"
+    Если Выберем тип загрузки GeForce "Драйвер Game Ready (GRD)"
+    Если Выберем язык "Русский"
+    Затем Кликнем на кнопку поиск драйвера
+    То появиться кнопки загрузка драйвера

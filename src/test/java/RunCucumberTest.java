@@ -8,5 +8,3 @@ import org.junit.runner.RunWith;
 public class RunCucumberTest
 {
 }
-//        dryRun = false,
-//        strict = false)
