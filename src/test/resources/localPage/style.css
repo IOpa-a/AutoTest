@@ -1,0 +1,67 @@
+/* Bordered form */
+.container{
+margin: 0 auto;
+max-width: 400px;
+
+}
+
+.form {
+
+  border: 3px solid #f1f1f1;
+  padding:15px;
+}
+.imgcontainer {
+  text-align: center;
+  margin-bottom:20px;
+}
+
+img.avatar {
+  width: 50%;
+  border-radius: 50%;
+}
+
+input[type=text], input[type=password],input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.radio-sex{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    font-size: 17px;
+}
+
+.styled-select select {
+   background: transparent;
+   width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+

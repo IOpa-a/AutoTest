@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+    <h2></h2>
+    <form action="#" method="post" class="form">
+        <div class="imgcontainer">
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+        <input type="text" id="name" placeholder="Enter Name" required>
+        <input type="email" id="email" placeholder="Enter Email" required>
+        <input type="password" id="password" placeholder="Enter Password" required>
+        <input type="password" id="password-retry" placeholder="Enter Password" required>
+        <div class="radio-sex">
+            <label for="male">
+                <input type="radio" checked id="male" name="sex" value="male">Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="sex" value="female">Female
+            </label>
+        </div>
+        <div class="styled-select">
+            <select id="select">
+                <option hidden>Select</option>
+                <option>1</option>
+                <option id="2">2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <button type="submit" id="loginBtn">Login</button>
+        <label>
+            <input type="checkbox" id="remember" name="remember"> Remember me
+        </label>
+    </form>
+
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
